@@ -78,7 +78,7 @@
                 </div>
               </div>
             </div>
-            {% endfor %}
+            {% endfor %}class="card-img rounded-0"
           </div>
         </div>
       </section>
@@ -95,7 +95,7 @@
                   {% if post.image_url == None %}
                     <img class="img-fluid" src=" {% static 'img/banner/blog.png' %} "alt="">
                   {% else %}
-                  <img class="img-fluid" src="{{post.image_url}}">
+                    <img class="img-fluid" src="{{post.image_url}}">
                   {% endif %}
                   <ul class="thumb-info" style="max-width: 550px;">
                     <li><a href="#"><i class="ti-user"></i>{{post.author}}</a></li>
